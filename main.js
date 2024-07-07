@@ -16,11 +16,11 @@ function adicionaLinha() {
     const inputNomeDoContato = document.getElementById('nome-contato');
     const inputNumeroTelefone = document.getElementById('telefone-contato');
 
-    if (contatos.includes(inputNomeDoContato.value)) {
-        alert(`O contato: ${inputNomeDoContato.value} já foi inserido`);
-    }else{
-        contatos.push(inputNomeDoContato.value);
-        telefone.push(inputNomeDoContato.value);
+        if (telefone.includes(inputNumeroTelefone.value)) {
+            alert(`O Telefone: ${inputNumeroTelefone.value} já foi inserido`);
+        }else{
+            contatos.push(inputNumeroTelefone.value);
+            telefone.push(inputNumeroTelefone.value);
         
         let linha = '<tr>';
         linha += `<td>${inputNomeDoContato.value}</td>`;
